@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("navID");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+} 
+
 var text = $(".txt");
 
 var split = new SplitText(text);
