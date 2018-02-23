@@ -1,143 +1,141 @@
 body{
-  font-family: 'Montserrat', sans-serif;
-  background-color:#f2efef;
+    font-family: Montserrat, sans-serif;
+    background-color:gainsboro;
 }
 .navbar{
-  font-family: 'Montaga', serif;
-  background-color:#5e0000;
-  overflow:hidden;
-  border-bottom: 1px solid black;
-  
+    font-family: Montaga, serif;
+    background-color: #5e0000;
+    overflow:hidden;
+    font-weight:bold;
+    border-bottom: 1px solid black;
 }
-.navbar p{
-  color:#f2efef;
-  float:left;
-  padding: 0 0 0 16px;
-  font-weight:bold;
-}
+
 .navbar a{
-  color:#f2efef;
-  float:right;
-  display:block;
-  text-align:center;
-  padding:16px 16px;
-  font-size:17px;
+    display:block;
+    padding: 14px 16px;
+    color:gainsboro;
+    font-size:17px;
 }
-
 .navbar a:hover{
-  background-color: #ddd;
-  color: #2d2c2c;
+    color:darkslategrey;
+    background-color:gainsboro;
 }
-.navbar .icon{
-  display:none;
+.firstContainer{
+    border:1px solid #5e0000;
+    position:relative;    
 }
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Contact"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .navbar a:not([href="#home"]) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
+.firstContainer img{
+    max-width:auto;
+    width:100%;
+    overflow:hidden;
+    object-fit:cover;
+    height:690px;
 }
-.firstCard{
-  margin: 30px;
-  border:1px solid #5e0000;
-  z-index:1;
-  position:relative;
-  
+.firstContainer h2{
+    left:50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    font-weight:bolder;
+    color:black;
 }
-
-.firstCard img{
-  max-width:auto;
-  width:100%;
-  overflow:hidden;
-  object-fit:cover;
-  height:400px;
-  
+.introText{
+    left:50%;
+    top:75%;
+    color:gainsboro;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    text-align:center;
+    line-height:24pt;
 }
-.firstTitle{
-  position:fixed;
-  padding: 10px 30px 10px 30px;
-  top:20%;
-  left:20%;
-  margin: 180px 0 0 0;
-  transform: translate(-50%, -50%);
-  color:white;
-  font-size:40px;
-  text-shadow: 2px 2px black;
+.introPara{
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border:1px solid transparent;
+    border-radius:10px;
 }
-.firstTitle h1{  
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-}
-.firstText{
-  position:absolute;
-  padding: 10px 30px 10px 30px;
-  top:45%;
-  color:white;
-  text-shadow: 2px 2px black;
-  padding-left:900px;
-  line-height:2;
-}
-.firstText p a{
-  color:white;
-}
-.firstText p{  
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-/*Second Card begins here */
-.secondCard{
-  margin: 30px;
-  border:1px solid #5e0000;
-  position:relative;
-  
-}
-#card-2-bg{
-  max-width:auto;
-  width:100%;
-  overflow:hidden;
-  object-fit:cover;
-  height:700px;
-  opacity:0.2;
-  
-}
-/*Third Card begins here */
-
-.thirdCard{
-  margin: 30px;
-  border:1px solid #5e0000;
-  position:relative;
-  
-}
-.thirdCard img{
-  max-width:auto;
-  width:100%;
-  overflow:hidden;
-  object-fit:cover;
-  height:400px;
-  
+.FirstParaadd{
+    color:black;
+    position:relative;
+    top:30%;
+    /*this doesn't fucking work for some reason goddammit. I want it to be placed closer to the bottom. */
 }
 
-.thirdText{
-  position:absolute;
-  padding: 10px 30px 10px 30px;
-  top:45%;
-  color:white;
-  text-shadow: 2px 2px black;
-  padding-left:900px;
-  line-height:2;
-}
-.thirdText p a{
-  color:white;
-}
-.thirdText p{  
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
 
-/*things for cards on 2nd element*/
+.secondContainer{
+    border:1px solid #5e0000;
+    position:relative;
+}
+.introWorks{
+    left:50%;
+    top:15%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    color:gainsboro;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border:1px solid transparent;
+    border-radius:10px;
+}
+.introWorks h2{
+    text-align:center;
+    font-weight:bolder;
+}
+.secondContainerImg{
+    max-width:auto;
+    width:100%;
+    overflow:hidden;
+    object-fit:cover;
+    height:690px;
+}
+.works{
+    margin: 0 auto;
+    top:35%;
+    position:absolute;
+}
+.works h3{
+    text-align:center;
+    font-family: Montaga, serif;
+}
+.works p{
+    text-align:center;
+}
+.card1{
+    border:1px solid #5e0000;
+    max-width:auto;
+    width:20%;
+    max-height:auto;
+    margin:40px;
+    padding:0;
+    height:400px;
+    background:gainsboro;
+}
+.card1 img{
+    max-width:auto;
+    width:100%;
+    object-fit:cover;
+    height:205px;
+}
+.card1text{
+    padding:12px;
+}
+.card2{
+    border:1px solid #5e0000;
+    max-width:auto;
+    width:20%;
+    max-height:auto;
+    margin:40px;
+    padding:0;
+    height:400px;
+    background:gainsboro;
+}
+.card2 img{
+    max-width:auto;
+    width:100%;
+    object-fit:cover;
+}
+.card2text{
+    padding:12px;
+}
