@@ -1,143 +1,74 @@
-body{
-    font-family: Montserrat, sans-serif;
+body, html{
+    font-family:'Alegreya Sans SC', Sans-Serif;
     background-color:gainsboro;
+    height:100%;
+    margin:0;
+}
+.element_intro{
+    background-image:url("../img/element1.jpg");
+    height:100%;
+    position:relative;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:0;
 }
 .navbar{
-    font-family: Montaga, serif;
-    background-color: #5e0000;
-    overflow:hidden;
-    font-weight:bold;
-    border-bottom: 1px solid black;
+    position:sticky;
+    top:10px;
+    z-index:10;
 }
-
-.navbar a{
-    display:block;
-    padding: 14px 16px;
+.navbar_title{
+    float:left;
+    font-size:20px;
     color:gainsboro;
-    font-size:17px;
-}
-.navbar a:hover{
-    color:darkslategrey;
-    background-color:gainsboro;
-}
-.firstContainer{
-    border:1px solid #5e0000;
-    position:relative;    
-}
-.firstContainer img{
-    max-width:auto;
-    width:100%;
-    overflow:hidden;
-    object-fit:cover;
-    height:690px;
-}
-.firstContainer h2{
-    left:50%;
-    top:45%;
-    transform: translate(-50%, -50%);
-    position:absolute;
     font-weight:bolder;
-    color:black;
+    margin: 10px 0 0 40px;
 }
-.introText{
-    left:50%;
-    top:75%;
+.navbar_links{
+    float:right;
+    font-size:20px;
     color:gainsboro;
-    transform: translate(-50%, -50%);
-    position:absolute;
-    text-align:center;
-    line-height:24pt;
-}
-.introPara{
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border:1px solid transparent;
-    border-radius:10px;
-}
-.FirstParaadd{
-    color:black;
-    position:relative;
-    top:30%;
-    /*this doesn't fucking work for some reason goddammit. I want it to be placed closer to the bottom. */
-}
-
-
-.secondContainer{
-    border:1px solid #5e0000;
-    position:relative;
-}
-.introWorks{
-    left:50%;
-    top:21.5%;
-    transform: translate(-50%, -50%);
-    position:absolute;
-    color:gainsboro;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border:1px solid transparent;
-    border-radius:10px;
-}
-.introWorks h2{
-    text-align:center;
     font-weight:bolder;
+    margin: 10px 40px 0 0;
+    word-spacing:40px;
+    background-color:#2a2a2b;
+    padding: 0 10px 0 10px;
 }
-.secondContainerImg{
-    max-width:auto;
-    width:100%;
-    overflow:hidden;
-    object-fit:cover;
-    height:690px;
+.navbar_links a{
+    color:gainsboro;
+    text-shadow: 1px 2px 0 black;
 }
-.works{
-    margin: 0 auto;
-    top:30%;
+.captions{
     position:absolute;
-    display:flex;
-    justify-content: center;
-}
-.works h3{
-    text-align:center;
-    font-family: Montaga, serif;
-}
-.works p{
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
     text-align:center;
 }
-.card1{
-    border:1px solid #5e0000;
-    max-width:auto;
-    width:20%;
-    max-height:auto;
-    margin:40px;
-    padding:0;
-    height:400px;
-    background:gainsboro;
+.captions span.intro_text{
+    background-color:#2a2a2b;
+    color:gainsboro;
+    padding:18px;
+    font-size:40px;
+    letter-spacing:10px;
 }
-.card1 img{
-    max-width:auto;
-    width:100%;
-    object-fit:cover;
-    height:205px;
+.intro_continue{
+    position: absolute;
+    top:90%;
+    left:50%;
+    color:gainsboro;
+    font-size:20px;
+    background-color:#2a2a2b;
+    padding:0 10px 0 10px;
+    transform: translate(-50%, -50%);
 }
-.card1text{
-    padding:12px;
-}
-.card2{
-    border:1px solid #5e0000;
-    max-width:auto;
-    width:20%;
-    max-height:auto;
-    margin:40px;
-    padding:0;
-    height:400px;
-    background:gainsboro;
-}
-.card2 img{
-    max-width:auto;
-    width:100%;
-    object-fit:cover;
-}
-.card2text{
-    padding:12px;
+.element_works{
+    background-image:url("../img/element2.jpg");
+    height:100%;
+    position:relative;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:0;
 }
