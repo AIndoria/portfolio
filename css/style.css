@@ -4,6 +4,14 @@ body, html{
     height:100%;
     margin:0;
 }
+body a{
+    color:gainsboro;
+    text-decoration:none;
+}
+body a:hover{
+    color:white;
+    text-shadow:2px 4px 5 black;
+}
 .element_intro{
     background-image:url("../img/element1.jpg");
     height:100%;
@@ -36,22 +44,24 @@ body, html{
     padding: 0 10px 0 10px;
 }
 .navbar_links a{
-    color:gainsboro;
     text-shadow: 1px 2px 0 black;
 }
-.captions{
+
+.intro_captions{
     position:absolute;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
     text-align:center;
+    z-index:1
 }
-.captions span.intro_text{
+.intro_captions span.intro_text{
     background-color:#2a2a2b;
     color:gainsboro;
-    padding:18px;
-    font-size:40px;
+    padding:10px 15px;
+    font-size:46px;
     letter-spacing:10px;
+    z-index:1
 }
 .intro_continue{
     position: absolute;
@@ -71,4 +81,24 @@ body, html{
     background-repeat:no-repeat;
     background-size:cover;
     z-index:0;
+}
+.works_captions{
+    position:absolute;
+    left:50%;
+    top:20%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    z-index:1
+}
+.works_captions span.works_caption_desc{
+    background-color:#2a2a2b;
+    color:gainsboro;
+    font-size:24px;
+    padding: 5px 10px;
+    letter-spacing:5px;
+    z-index:1
+}
+.works_captions span.works_cards_heading{
+    font-size:46px;
+    text-shadow: 1px 1px 2px white;
 }
