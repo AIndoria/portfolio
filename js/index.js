@@ -1,30 +1,4 @@
-function myFunction() {
-    var x = document.getElementById("navID");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-} 
-
-var text = $(".txt");
-
-var split = new SplitText(text);
-
-function random(min, max){
-	return (Math.random() * (max - min)) + min;
-}
-
-$(split.chars).each(function(i){
-	TweenMax.from($(this), 1, {
-		opacity: 0,
-		x: random(-500, 500),
-		y: random(-500, 500),
-		z: random(-500, 500),
-		scale: .1,
-		delay: i * .02,
-		yoyo: true,
-		repeat: 0,
-		repeatDelay: 10
-	});
-});
+//TODO
+//Make sure that the pages scroll after being clicked anywhere
+// "element_intro".onclick=function () {
+// document.location.href="#"; }

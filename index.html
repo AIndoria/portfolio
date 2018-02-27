@@ -1,54 +1,77 @@
 <html lang=en>
     <head>
         <title>Indoria</title>
-        <link href="https://fonts.googleapis.com/css?family=Montaga|Montserrat|Alegreya+Sans+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Montaga|Montserrat" rel="stylesheet"> 
         <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!-- All images are CC Licensed and/or licensed to edit/publish commercially -->
         <!--<meta http-equiv="refresh" content="3">  -->   
     </head>
 
     <body>
         <div class="container-fluid">
                 <div class="navbar">
-                        <span class="navbar_title">Indoria</span>
+                        <span class="navbar_title"><a href="#intro">Indoria</a></span>
                         <div class="navbar_links">
-                            <a href=#>Home</a>
-                            <a href=#>Works</a>
-                            <a href=#>About</a>
-                            <a href=#>History</a>
+                            <a href="#intro">Home</a>
+                            <a href="#works">Works</a>
+                            <a href="#contact">About</a>
+                            <a href="https://github.com/AIndoria/portfolio/commits/master/index.html">History</a>
                         </div>
                 </div>
-            <div class="element_intro">
+            <div class="element_intro" id="intro">
                 
                 <div class="intro_captions">
                     <span class="intro_text">Hi</span><br>
                     <span class="intro_text">I am Abhi</span>
                 </div>
-                <span class="intro_continue">Click anywhere to continue</span>
+                <span class="intro_continue"><a href="#works">Click here to continue</a></span>
             </div>
             
 
-            <div class="element_works">
+            <div class="element_works" id="works">
                 <div class=works_captions>
                     <span class="works_caption_desc">This is one of my few attemtps to create a portfolio</span><br>
                     <span class="works_caption_desc">This will keep getting updated as I learn more</span><br>
-                    <span class="works_caption_desc">You can see the history of this page's design at my <a href="https://github.com/aindoria/portfolio">Github</a></span><br>
-                    <span class="works_caption_desc">page</span><br><br><br><br>
+                    <span class="works_caption_desc">You can see the history of this page's design at <a href="https://github.com/aindoria/portfolio">Github</a></span><br><br><br><br>
                     <span class="works_cards_heading">Related Works</span>
                 </div>
-                <div class="works_card1">
-                    <div class="card1_heading"></div>
-                    <div class="card1_text"></div>
-                </div>
-
-                <div class="works_card2">
-                        <div class="card2_heading"></div>
-                        <div class="card2_text"></div>
+                <div class="works_cards">
+                    <div class="works_card_1">
+                        <a href="https://codepen.io/aindoria/pen/PQNdJm"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/220px-Statue-Augustus.jpg" alt="Project 1 Image"></a>
+                        <div class="card_1_heading">Tribute Page</div>
+                        <div class="card_1_text">This was the first project I created in freeCodeCamp.</div>
                     </div>
+            
+                    <div class="works_card_2">
+                        <a href=#><img src="http://musiccitiessummit.com/wp-content/uploads/chicago-1.jpg" alt="Project 2 Image Placeholder"></a>
+                        <div class="card_2_heading">Placeholder Heading</div>
+                        <div class="card_2_text">Placey McPlaceholder Text about the Project.</div>
+                    </div>
+                </div>
+                <span class="intro_continue"><a href="#contact">Click here to continue</a></span>
+                
             </div>
 
 
-            <div class="element_contact"></div>
+            <div class="element_contact" id="contact">
+                <div class="contact_text">
+                    <span class="contacts_text_line">As always, feedback is welcome.</span><br>
+                    <span class="contacts_text_line">You can reach me using the following contact methods.</span><br>
+                    <span class="contacts_text_line">I am currently looking for new opportunities.</span>    
+                </div>
+                <div class="contact_box">
+                    <div class="icons">
+                        <span class="icon_item"><a href="https://github.com/aindoria"><i class="fab fa-github-alt fa-3x"></i><br>github</a></span>
+                        <span class="icon_item"><a href="mailto:indoria@aindoria.com"><i class="far fa-envelope fa-3x"></i><br>email</a></span>
+                        <span class="icon_item"><a href="https://www.instagram.com/aindoria/"><i class="fab fa-instagram fa-3x"></i><br>instagram</a></span>
+                        <span class="icon_item"><a href="https://twitter.com/AIndoria"><i class="fab fa-twitter fa-3x"></i><br>twitter</a></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
