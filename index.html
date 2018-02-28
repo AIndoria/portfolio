@@ -2,7 +2,7 @@
     <head>
         <title>Indoria</title>
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Montaga|Montserrat" rel="stylesheet"> 
-        <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -12,8 +12,8 @@
     </head>
 
     <body>
-        <div class="container-fluid">
-                <div class="navbar">
+        <div>
+                <div class="navbar container-fluid">
                         <span class="navbar_title"><a href="#intro">Indoria</a></span>
                         <div class="navbar_links">
                             <a href="#intro">Home</a>
@@ -22,7 +22,7 @@
                             <a href="https://github.com/AIndoria/portfolio/commits/master/index.html">History</a>
                         </div>
                 </div>
-            <div class="element_intro" id="intro">
+            <div class="element_intro container-fluid" id="intro">
                 
                 <div class="intro_captions">
                     <span class="intro_text">Hi</span><br>
@@ -32,21 +32,24 @@
             </div>
             
 
-            <div class="element_works" id="works">
-                <div class=works_captions>
+            <div class="element_works container-fluid" id="works">
+                <div class="works_captions">
                     <span class="works_caption_desc">This is one of my few attemtps to create a portfolio</span><br>
                     <span class="works_caption_desc">This will keep getting updated as I learn more</span><br>
-                    <span class="works_caption_desc">You can see the history of this page's design at <a href="https://github.com/aindoria/portfolio">Github</a></span><br><br><br><br>
-                    <span class="works_cards_heading">Related Works</span>
+                    <span class="works_caption_desc">You can see the history of this page's design at <a href="https://github.com/aindoria/portfolio">Github</a></span>
                 </div>
-                <div class="works_cards">
-                    <div class="works_card_1">
+                <div class="works_heading row">
+                    <span class="works_cards_heading col-xl-12">Related Works</span>
+                </div>
+                <div class="works_cards row justify-content-center">
+                    
+                    <div class="works_card_1 col-xl-6 ">
                         <a href="https://codepen.io/aindoria/pen/PQNdJm"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/220px-Statue-Augustus.jpg" alt="Project 1 Image"></a>
                         <div class="card_1_heading">Tribute Page</div>
                         <div class="card_1_text">This was the first project I created in freeCodeCamp.</div>
                     </div>
             
-                    <div class="works_card_2">
+                    <div class="works_card_2 col-xl-6">
                         <a href=#><img src="http://musiccitiessummit.com/wp-content/uploads/chicago-1.jpg" alt="Project 2 Image Placeholder"></a>
                         <div class="card_2_heading">Placeholder Heading</div>
                         <div class="card_2_text">Placey McPlaceholder Text about the Project.</div>
@@ -57,12 +60,12 @@
             </div>
 
 
-            <div class="element_contact" id="contact">
+            <div class="element_contact container-fluid" id="contact">
                 <div class="contact_text">
                     <span class="contacts_text_line">As always, feedback is welcome.</span><br>
-                    <span class="contacts_text_line">You can reach me using the following contact methods.</span><br>
-                    <span class="contacts_text_line">I am currently looking for new opportunities.</span>    
+                    <span class="contacts_text_line">You can reach me using the following contact methods.</span><br>    
                 </div>
+                <span class="contact_opportunities">I am currently looking for new opportunities.</span>
                 <div class="contact_box">
                     <div class="icons">
                         <span class="icon_item"><a href="https://github.com/aindoria"><i class="fab fa-github-alt fa-3x"></i><br>github</a></span>

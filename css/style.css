@@ -2,7 +2,8 @@ body, html{
     font-family:'Alegreya Sans SC', Sans-Serif;
     background-color:gainsboro;
     height:100%;
-    margin:0;
+    padding-top:0px;
+    margin-top: 0px;
     scroll-behavior:smooth;
 }
 body a{
@@ -18,7 +19,10 @@ body a:hover{
 .navbar{
     position:sticky;
     top:10px;
-    z-index:10;
+    margin-bottom:0;
+    min-height:unset;
+    height:0;
+    z-index:1;
 }
 .navbar_title{
     float:left;
@@ -70,7 +74,7 @@ body a:hover{
 }
 .intro_continue{
     position: absolute;
-    top:90%;
+    top:95%;
     left:50%;
     color:gainsboro;
     font-size:20px;
@@ -94,7 +98,7 @@ body a:hover{
 .works_captions{
     position:absolute;
     left:50%;
-    top:20%;
+    top:18%;
     transform: translate(-50%, -50%);
     text-align:center;
     z-index:1;
@@ -103,7 +107,7 @@ body a:hover{
     background-color:#2a2a2b;
     color:gainsboro;
     font-size:24px;
-    padding: 5px 10px;
+    padding:5px;
     letter-spacing:5px;
     z-index:1;
     line-height: 1.5;
@@ -111,15 +115,20 @@ body a:hover{
     vertical-align: middle;
     
 }
-.works_captions span.works_cards_heading{
+.works_cards_heading{
     font-size:46px;
+    position:absolute;
+    top:33%;
+    left:50%;
+    transform:translate(-50%,-50%);
     text-shadow: 1px 1px 2px white;
+    z-index:1;
 }
 .works_cards{
     position:absolute;
-    top:40%;
-    align-items:center;
-    left:34%; /*How in the world do I place them inline block?*/
+    top:37%;
+    left:30%; /*How in the world do I place them inline block?*/
+    transform:translate(15%,-0%);
 }
 .works_card_1{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -131,6 +140,7 @@ body a:hover{
     background:#2a2a2b;
     color:gainsboro;
     border:1px solid transparent;
+    
 }
 .works_card_1:hover, .works_card_2:hover{
     box-shadow: 0 8px 24px 0 rgba(0,0,0,0.2);
@@ -163,7 +173,7 @@ body a:hover{
     color:gainsboro;
     border:1px solid transparent;
     position:absolute;
-    left:100%;
+    left:120%;
     top:0%;
 }
 .element_contact{
@@ -178,7 +188,7 @@ body a:hover{
 .contact_text{
     position:absolute;
     left:50%;
-    top:20%;
+    top:30%;
     transform: translate(-50%, -50%);
     text-align:center;
     z-index:1
@@ -195,9 +205,24 @@ body a:hover{
     vertical-align: middle;
     
 }
+.contact_opportunities{
+    background-color:#2a2a2b;
+    color:gainsboro;
+    font-size:24px;
+    padding: 5px 10px;
+    letter-spacing:5px;
+    z-index:1;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    position:absolute;
+    top:43%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
 .contact_box{
     position:absolute;
-    top:30%;
+    top:50%;
     left:50%;
     transform: translate(-50%, -20%);
     border: 1 solid black;
