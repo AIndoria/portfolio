@@ -1,0 +1,89 @@
+.container{
+  animation-name:make-visible;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+  height:0%;
+  grid-template-columns: 1fr;
+  grid-template-rows:repeat(3, 1fr) 0.25fr;
+  grid-template-areas: "about"
+                       "blog"
+                       "works"
+                       "link";
+}
+@keyframes make-visible{
+  from{
+    height:0%;
+    
+  }
+  to{
+    height:100%;
+    visibility: visible;
+    
+  }
+}
+@keyframes make-visible-height{
+  from{
+    height:0vh;
+  }
+  to{
+    height:100vh;
+    
+  }
+}
+.about-box{
+  height:0vh;
+  grid-area: about;
+  text-align:center;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+
+  animation-name:make-visible-height;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+}
+.about-heading{
+  position:relative;
+  top:auto;
+  left:auto;
+  transform: none;
+  font-size:3em;
+}
+.about-desc{
+  position:relative;
+  font-size:1.5em;
+  top:auto;
+  left:auto;
+  transform: none;
+}
+
+.blog-box{
+  height:0vh;
+  grid-area: blog;
+
+  animation-name:make-visible-height;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+}
+.works-box{
+  height:0vh;
+  grid-area:works;
+
+  animation-name:make-visible-height;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+}
+.links-box{
+  grid-area:link;
+  flex-direction: row;
+
+  height:0%;
+  animation-name:make-visible;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+}
