@@ -1,0 +1,270 @@
+html, body{
+  color:white;
+  height:99%;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.container{
+  border:1px solid red;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  animation-name:visible;
+  animation-delay:3.5s;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  height:0px;
+}
+.container-intro{
+  animation-name:splash-load, splash-unload;
+  animation-duration:0.3s, 0.5s;
+  animation-delay:0.2s, 3s;
+  animation-fill-mode: forwards;
+  background:black;
+  color:white;
+  display:flex;
+  font-family: "Quicksand", sans-serif;
+  font-size:5em;
+  flex-direction: column;
+  height:100%;
+}
+.intro-text{
+  margin:auto;
+  text-align:center;
+}
+.intro-text-1{
+  animation-name: intro-text;
+  animation-duration:0.5s;
+  animation-delay:0.3s;
+  animation-fill-mode: forwards;
+  visibility:hidden;
+}
+.intro-text-2{
+  animation-name: intro-text;
+  animation-duration:0.5s;
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+  visibility:hidden;
+}
+
+.about{
+  position:relative;
+  border:1px solid blue;
+  flex:1.75;
+  height:100%;
+  overflow:hidden;
+ /* background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://i.imgur.com/NyUDObC.jpg");*/
+}
+
+.about img{
+  filter:brightness(50%);
+  width:100%;
+}
+.about-heading{
+  font-family:"Quicksand", sans-serif;
+  font-size:4.5em;
+  left:50%;
+  position:absolute;
+  top:25%;
+  transform:translate(-50%,-50%);
+  
+  
+}
+.about-heading hr{
+  animation-name:hr;
+  animation-duration:1s;
+  animation-delay:4.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  width:100%;
+}
+.about-text{
+  
+  animation-name:about-text;
+  animation-duration:1s;
+  animation-delay:4.5s;
+  animation-fill-mode: forwards;
+  font-family: "Arial", sans-serif;
+  font-size:2em;
+  font-weight: bold;
+  left:50%;
+  position:absolute;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%,-50%);
+  visibility:hidden;
+}
+.rhs{
+  border:1px solid green;
+  display:flex;
+  flex:1.25;
+  flex-direction:column;
+  height:100%;
+  font-family:"Quicksand", serif;
+}
+.rhs-blog{
+  position:relative;
+  align-items:center;
+  border:1px solid yellow;
+  display:flex;
+  flex:1;
+  height:100%;
+  justify-content:center;
+  overflow:hidden;
+  
+}
+.rhs-blog img{
+  filter:brightness(50%);
+  width:100%;
+}
+.blog-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:3.5em;
+}
+.rhs-others{
+  border:1px solid blue;
+  display:flex;
+  flex:1;
+  height:100%;
+  flex-direction:row;
+  font-family:"Quicksand", serif;
+}
+.others-works{
+  position:relative;
+  align-items:center;
+  border:1px solid red;
+  display:flex;
+  flex:3;
+  height:100%;
+  justify-content:center;
+  overflow:hidden;
+}
+.others-works img{
+  filter:brightness(50%);
+  width:100%;
+  height:100%;
+}
+.works-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:2.75em;
+}
+.others-links{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  height:100%;
+  justify-content:center;
+}
+.links-github{
+  align-items:center;
+  background:rgb(20, 20, 20);
+  display:flex;
+  flex:1;
+  height:100%;
+  justify-content:center;
+}
+.links-twitter{
+  align-items:center;
+  background:rgb(14, 182, 233);
+  display:flex;
+  flex:1;
+  height:100%;
+  justify-content:center;
+}
+.links-linkedin{
+  align-items:center;
+  background:rgb(0, 42, 179);
+  display:flex;
+  flex:1;
+  height:100%;
+  justify-content:center;
+}
+
+/*ANIMATION*/
+
+@keyframes about{
+  from{
+    top:50%;
+  }
+  to{
+    top:20%;
+  }
+}
+@keyframes hr{
+  from{
+    width:0%
+  }
+  to{
+    visibility: visible;
+    width:100%;
+  }
+}
+@keyframes about-text{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    visibility: visible;
+  }
+}
+@keyframes splash-load{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes splash-unload{
+  from{
+    visibility:visible;
+  }
+  to{
+    visibility:hidden;
+    height:0px;
+  }
+}
+@keyframes visible{
+  from{
+    opacity:0.5;
+    visibility: hidden;
+  }
+  to{
+    opacity:1;
+    visibility: visible;
+    height:100%;
+  }
+}
+@keyframes invisible{
+  from{
+    visibility: visible;
+  }
+  to{
+    visibility: hidden;
+  }
+}
+@keyframes intro-text{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+    visibility:visible;
+  }
+}
+
+@media(min-width:600px){
+  
+}
