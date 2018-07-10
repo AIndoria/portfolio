@@ -15,3 +15,11 @@ document.addEventListener("click", function(event){
   }
 });
 
+function switchWorks(){
+  document.getElementById("intro").style.display="none";
+  document.getElementById("works").style.display="block";
+}
+function switchHome(){
+  document.getElementById("intro").style.display="grid";
+  document.getElementById("works").style.display="none";
+}

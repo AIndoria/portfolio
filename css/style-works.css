@@ -1,0 +1,295 @@
+body{
+  height:100vh;
+  width:100vw;
+  background:#ececec;
+  overflow:hidden;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav a{
+  text-decoration: none;
+  color:white;
+}
+.nav a:hover{
+  color:aquamarine;
+  transition:0.5s;
+}
+ul{
+  list-style: none;
+}
+.nav{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  background:crimson;
+  position:absolute;
+  top:25px;
+  left:50px;
+  box-shadow:1px 1px 2px grey;
+}
+
+.nav:hover{
+  background:rgb(0, 99, 8);
+  transition:0.3s;
+}
+
+
+.nav-expanded{
+  animation-name: nav-animate;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+  box-shadow:0 0 5px 2px grey;
+  position:absolute;
+  
+}
+
+@keyframes nav-animate{
+  to{
+    width:200px;
+    height:100vh;
+    border-radius:0;
+    top:0px;
+    left:0px;
+    background:rgba(14, 14, 14, 0.61);
+  }
+}
+
+.nav-list{
+  display:none;
+  flex-direction:column;
+  height:200px;
+  justify-content: space-between;
+  font-family:"Raleway", sans-serif;
+  font-size:1.5em;
+  color:white;
+}
+
+
+.root{
+  height:100%;
+  max-width:100%;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows:repeat(10,1fr);
+  
+}
+.box{
+  grid-row:1/11;
+  grid-column:1/11;
+  height:100vh;
+  width:90vw;
+  background: linear-gradient(to top right, #ececec , #cacaca);
+  transform:rotate(20deg);
+  z-index:-4;
+  position:absolute;
+}
+.works{
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows:repeat(10,1fr);
+  grid-row: 1/11;
+  grid-column:1/11;
+}
+
+.works-intro{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows:repeat(4,1fr);
+  grid-column:1/2;
+  grid-row:5/9;
+}
+.works-intro h1{
+  font-family: "Raleway", sans-serif;
+  font-size:3rem;
+  grid-column:2/7;
+  grid-row:1/2;
+}
+.works-intro p{
+  grid-column:2/6;
+  grid-row:2/5;
+  font-size:1.5rem;
+}
+
+.works-cards{
+  grid-column:2/3;
+  grid-row:1/10;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card{
+  height:300px;
+  width:400px;
+  position:relative;
+}
+.card:hover{
+  box-shadow: 1px 1px 2px 2px grey;
+  transition:0.3s;
+  z-index:5;
+}
+.card a{
+  text-decoration: none;
+  color:white;
+}
+.card1{
+  background:white;
+  top:20px;
+  left:20px;
+  display:flex;
+  z-index:1;
+}
+.card1-image{
+  margin:5px 5px 5px 0;
+  flex:1 1 95%;
+  order:1;
+  background:url('../img/is_iss_over_you.png');
+  background-size: 150% 100%;
+}
+.card1-text{
+  background:crimson;
+  color:white;
+  margin:5px -10px 5px 5px;
+  flex:1 1 5%;
+  order:-1;
+}
+
+
+.card1-text:hover{
+  color:black;
+  background:white;
+  margin-right:0;
+  transition:0.5s;
+}
+.card1-text p{
+  padding-top:10px;
+  transform: rotate(90deg);
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.card2{
+  background:white;
+  top:200px;
+  left:-200px;
+  display:flex;
+  z-index:2;
+}
+
+.card2-image{
+  margin:5px -10px 5px 5px;
+  flex:1 1 95%;
+  z-index:2;
+  background:url('../img/wikipeda_client.png');
+  background-size: 150% 130%;
+}
+.card2-text{
+  background:navy;;
+  color:white;
+  margin:5px 5px 5px 0px;
+  flex:1 1 5%;
+}
+.card2-text:hover{
+  color:black;
+  background:white;
+  margin-left:10px;
+  transition:0.5s;
+}
+.card2-text p{
+  padding-bottom:10px;
+  transform: rotate(90deg);
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.card3{
+  background:white;
+  top:-100px;
+  left:20px;
+  display:flex;
+  z-index:3;
+}
+.card3-image{
+  margin:5px 5px 5px 0;
+  flex:1 1 95%;
+  order:1;
+  background:url('../img/weather_client.png');
+  background-size: 150% 100%;
+}
+.card3-text{
+  background:green;
+  color:white;
+  margin:5px -10px 5px 5px;
+  flex:1 1 5%;
+  order:-1;
+}
+
+.card3-text:hover{
+  color:black;
+  background:white;
+  margin-right:0;
+  transition:0.5s;
+}
+.card3-text p{
+  padding-top:10px;
+  transform: rotate(90deg);
+  font-weight: 500;
+  line-height: 3em;
+}
+
+@media screen and (max-width:1600px){
+  .card2{
+    top:-100px;
+    left:300px;
+  }
+  .card3{
+    top:-200px;
+    left:20px;
+  }
+}
+
+@media screen and (max-width:1427px){
+  .card{
+    top:0;
+    left:0;
+  }
+  .works{
+    grid-template-columns: repeat(10,1fr);
+  }
+  .works-intro{
+    grid-column:3/8;
+    grid-row:1/5;
+    text-align:center;
+  }
+  .works-intro p{
+    grid-column:1/7;
+    grid-row:2/5;
+    font-size:1.5rem;
+  }
+  .works-cards{
+    grid-column:2/9;
+    grid-row:6/10;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body{
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  .root{
+    overflow-y:auto;
+  }
+  .box{
+    top:-200px;
+    left:-200px;
+    background: linear-gradient(to top left, #ececec , #cacaca);
+  }
+}
+
+@media screen and (max-width:811px){
+  .works-intro{
+    
+  }
+}
