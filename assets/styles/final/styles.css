@@ -1,3 +1,5 @@
+@import "works.css";
+
 body{
   height:97vh;
   width:98vw;
@@ -49,6 +51,7 @@ body{
   grid-row: 3/4;
   grid-column:7/11;
   font-size:3.5rem;
+  text-shadow:0.063rem 0.063rem grey;
 
 }
 .navigation{
@@ -61,29 +64,61 @@ body{
     text-align: center;
     background-color:rgb(74, 5, 28);
     color:white;
-    padding:5px;
+    padding:0.313rem;
+  }
+.navigation__item:hover{
+    -webkit-animation-name:link-background;
+            animation-name:link-background;
+    -webkit-animation-duration:0.3s;
+            animation-duration:0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 
+
 .title{
+  display:none;
   font-family: "Yrsa", "serif";
   font-size:2.5rem;
   margin:auto;
   grid-row: 6/7;
   grid-column:2/4;
+  letter-spacing: 0.063rem;
 }
 
+
 .title__desc{
+    display:none;
     font-family: "Basic", "sans-serif";
     padding:25px;
     grid-row: 7/9;
     grid-column:1/5;
     line-height:1.5;
+    color:rgb(49, 49, 49);
   }
 
+
+.title__desc a{
+      text-decoration: none;
+      color:rgb(105, 5, 39);
+    }
+
+
 .title__access{
+    display:none;
     grid-row:10/11;
     grid-column:5/8;
     padding:25px;
     font-family: "Basic", "sans-serif";
   }
 
+
+/*Animations*/
+
+@-webkit-keyframes link-background{
+  to {background:rgb(105, 5, 39); }
+}
+
+@keyframes link-background{
+  to {background:rgb(105, 5, 39); }
+}
