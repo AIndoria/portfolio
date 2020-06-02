@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a335dc99.chunk.css",
+    "main.js": "/Portfolio/static/js/main.28b65142.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.28b65142.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.657ad8a3.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.657ad8a3.js.map",
+    "static/js/2.984bd3d7.chunk.js": "/Portfolio/static/js/2.984bd3d7.chunk.js",
+    "static/js/2.984bd3d7.chunk.js.map": "/Portfolio/static/js/2.984bd3d7.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.7f527dd7168bd002e000d95fe93ba916.js": "/Portfolio/precache-manifest.7f527dd7168bd002e000d95fe93ba916.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.a335dc99.chunk.css.map": "/Portfolio/static/css/main.a335dc99.chunk.css.map",
+    "static/js/2.984bd3d7.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.984bd3d7.chunk.js.LICENSE.txt",
+    "static/media/Indoria.png": "/Portfolio/static/media/Indoria.f3e7ab4d.png",
+    "static/media/Landing.scss": "/Portfolio/static/media/wiki.7a8185c0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.657ad8a3.js",
+    "static/js/2.984bd3d7.chunk.js",
+    "static/css/main.a335dc99.chunk.css",
+    "static/js/main.28b65142.chunk.js"
+  ]
+}
